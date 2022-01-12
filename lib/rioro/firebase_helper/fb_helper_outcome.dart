@@ -4,7 +4,7 @@ class OutcomeFirebaseHelper {
   OutcomeFirebaseHelper();
 
   static final CollectionReference<Map<String, dynamic>> _col =
-      FirebaseFirestore.instance.collection('outcome_dev');
+      FirebaseFirestore.instance.collection('outcome_dev1');
   Stream<QuerySnapshot<Map<String, dynamic>>> get stream => _col.snapshots();
 
   DocumentReference<Map<String, dynamic>> _doc(String path) => _col.doc(path);
